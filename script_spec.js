@@ -72,7 +72,7 @@ let searchField = element(by.css('.search-form__input.ng-touched.ng-dirty.ng-val
 let searchResult = element(by.css('.content-header__title')).getText();
 expect(testText).toBe(searchResult);
 
-let searchResultList = element(by.ssContainingText('.track-card__title', 'test')).first().getText();
+let searchResultList = element(by.cssContainingText('.track-card__title', 'test')).first().getText();
 expect(testText).toBe(searchResultList);
 
 
